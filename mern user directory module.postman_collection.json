@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "8de06dcd-9f44-4d7d-9c58-28ec23b4c6c6",
+		"name": "mern user directory module",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add new user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"prateek saini\",\r\n    \"email\":\"demo@mail.com\",\r\n    \"phone\":7011152170\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/user/data",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/user/data/6153631845c217234a29add9",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"data",
+						"6153631845c217234a29add9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete all users details",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/user/datas",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"datas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete particular user by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/user/data/61535e1c1f935af452b20d22",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"data",
+						"61535e1c1f935af452b20d22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user details",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\":\"6153631845c217234a29add9\",\r\n    \"name\": \"prateek2\",\r\n    \"email\":\"deo2@mail.com\",\r\n    \"phone\": 7011152170\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/user/data",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/user/datas",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"datas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
